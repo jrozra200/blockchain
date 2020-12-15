@@ -1,7 +1,7 @@
 library(jsonlite)
 library(httr)
 
-GET("http://localhost:5000/mine")
+prettify(GET("http://localhost:5000/mine"))
 
 string <- toJSON(list(sender = "d4ee26eee15148ee92c6cd394edd974e",
                       recipient = "someone-other-address",
